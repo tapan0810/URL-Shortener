@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>URL Shortener</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🔗 URL Shortener</h1>
+    <p class="subtitle">Convert long links into short, shareable URLs</p>
+
+    <div class="card">
+      <input
+        type="url"
+        id="longUrl"
+        placeholder="Enter long URL here..."
+        required
+      />
+      <button onclick="shortenUrl()">Shorten URL</button>
+
+      <div id="result" class="result hidden">
+        <p>
+          Short URL:
+          <a id="shortUrl" href="#" target="_blank"></a>
+        </p>
+        <button class="copy-btn" onclick="copyToClipboard()">Copy</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>Built with ASP.NET Core 🚀</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
