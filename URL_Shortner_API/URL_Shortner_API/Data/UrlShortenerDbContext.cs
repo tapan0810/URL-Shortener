@@ -10,6 +10,7 @@ namespace URL_Shortner_API.Data
         public UrlShortenerDbContext(DbContextOptions<UrlShortenerDbContext> options)
             : base(options)
         {
+
         }
 
         public DbSet<ShortUrl> ShortUrls => Set<ShortUrl>();
